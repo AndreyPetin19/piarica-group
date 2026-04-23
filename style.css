@@ -1272,3 +1272,112 @@ h3 {
   transform: translateY(-6px);
   box-shadow: 0 40px 90px rgba(0,0,0,0.5);
 }
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 820px) {
+  /* 1. Кнопка "Обсудить проект" в шапке */
+  .nav {
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav > .btn.btn-secondary {
+    width: auto !important;
+    min-width: 0 !important;
+    height: 42px !important;
+    padding: 0 14px !important;
+    font-size: 13px !important;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+
+  .brand {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .brand-title {
+    font-size: 18px !important;
+  }
+
+  .brand-subtitle {
+    font-size: 9px !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  /* 2. Карточка "Наружная реклама и монтаж" только на телефоне */
+  .services-grid .service-card.service-card-wide:last-child {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-image {
+    height: 210px !important;
+    min-height: 210px !important;
+    max-height: 210px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-content {
+    padding: 18px !important;
+    gap: 14px !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-top {
+    gap: 12px !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-top h3 {
+    font-size: 22px !important;
+    line-height: 1.05 !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-list {
+    margin-top: 6px !important;
+    gap: 8px !important;
+  }
+}
+
+/* Совсем маленькие телефоны */
+@media (max-width: 480px) {
+  .nav > .btn.btn-secondary {
+    height: 40px !important;
+    padding: 0 12px !important;
+    font-size: 12px !important;
+  }
+
+  .brand-logo {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .brand-title {
+    font-size: 16px !important;
+  }
+
+  .brand-subtitle {
+    font-size: 8px !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-image {
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-content {
+    padding: 16px !important;
+  }
+
+  .services-grid .service-card.service-card-wide:last-child .service-top h3 {
+    font-size: 20px !important;
+  }
+}
