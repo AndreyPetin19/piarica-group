@@ -93,10 +93,10 @@ p {
 }
 
 h1 {
-  font-size: clamp(42px, 7vw, 86px);
-  line-height: 0.96;
-  letter-spacing: -0.04em;
-  font-weight: 800;
+  font-size: clamp(30px, 4.2vw, 54px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  max-width: 14ch;
 }
 
 h2 {
@@ -368,32 +368,22 @@ h3 {
 }
 
 .hero-stats {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 12px;
 }
 
 .stat {
-  border-radius: 22px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  min-height: 126px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  padding: 14px;
+  min-height: 90px;
+  gap: 6px;
 }
 
 .stat strong {
-  font-size: clamp(26px, 4vw, 40px);
-  line-height: 1;
-  letter-spacing: -0.04em;
+  font-size: 22px;
 }
 
 .stat span {
-  color: var(--muted);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .about-grid {
@@ -952,10 +942,10 @@ h3 {
   }
 
   .hero-left {
-    min-height: auto;
-    padding: 24px;
-    justify-content: flex-start;
-  }
+  min-height: 520px;
+  padding: 28px 32px;
+  justify-content: center;
+}
 
   .hero-copy {
     gap: 18px;
@@ -1379,5 +1369,359 @@ h3 {
 
   .services-grid .service-card.service-card-wide:last-child .service-top h3 {
     font-size: 20px !important;
+  }
+}
+.hero-proof {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.proof-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(156,255,59,0.1);
+  border: 1px solid rgba(156,255,59,0.25);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.proof-text {
+  font-size: 14px;
+  color: var(--muted);
+}
+.trust-box {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  padding: 40px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(156,255,59,0.08), rgba(255,255,255,0.02));
+  border: 1px solid rgba(156,255,59,0.2);
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.3);
+  font-weight: 700;
+  text-align: center;
+}
+
+.trust-badge span {
+  font-size: 24px;
+  margin-right: 10px;
+  color: var(--accent);
+}
+.hero-copy {
+  max-width: 620px;
+}
+.hero-stats .stat:last-child {
+  border: 1px solid rgba(156,255,59,0.35);
+  background: rgba(156,255,59,0.05);
+}
+.hero-copy {
+  gap: 16px;
+  max-width: 560px;
+}
+/* ===== HERO FINAL FIX ===== */
+
+.hero {
+  padding: 36px 0 64px !important;
+  min-height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.hero-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 0.92fr !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+.hero-left {
+  min-height: 500px !important;
+  padding: 36px !important;
+  border-radius: 34px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.hero-copy {
+  max-width: 620px !important;
+  gap: 18px !important;
+}
+
+.hero-copy h1,
+.hero-left h1 {
+  font-size: clamp(38px, 5vw, 64px) !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  max-width: 720px !important;
+}
+
+.hero-copy .lead {
+  font-size: 18px !important;
+  line-height: 1.45 !important;
+  max-width: 620px !important;
+}
+
+.hero-proof {
+  margin-top: 2px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+.proof-badge {
+  display: inline-flex !important;
+  width: fit-content !important;
+  padding: 8px 13px !important;
+  border-radius: 999px !important;
+  background: rgba(156, 255, 59, 0.1) !important;
+  border: 1px solid rgba(156, 255, 59, 0.25) !important;
+  color: var(--accent) !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.07em !important;
+  text-transform: uppercase !important;
+}
+
+.proof-text {
+  font-size: 14px !important;
+  color: var(--muted) !important;
+}
+
+.hero-right {
+  min-height: 500px !important;
+  border-radius: 34px !important;
+  padding: 20px !important;
+  display: grid !important;
+  grid-template-rows: 1fr auto !important;
+  gap: 16px !important;
+}
+
+.hero-photo {
+  min-height: 310px !important;
+  border-radius: 26px !important;
+  overflow: hidden !important;
+}
+
+.hero-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+}
+
+.stat {
+  min-height: 104px !important;
+  padding: 16px !important;
+  border-radius: 20px !important;
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+}
+
+.stat strong {
+  font-size: 28px !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+}
+
+.stat span {
+  font-size: 13px !important;
+  line-height: 1.35 !important;
+  color: var(--muted) !important;
+}
+
+.hero-stats .stat.audit-stat {
+  border-color: rgba(156,255,59,0.32) !important;
+  background: rgba(156,255,59,0.055) !important;
+}
+
+.hero-stats .stat.audit-stat strong {
+  color: var(--accent) !important;
+}
+/* ===== HERO COMPACT SIZE FIX ===== */
+
+.hero {
+  padding: 28px 0 52px !important;
+}
+
+.hero-grid {
+  grid-template-columns: 0.98fr 0.82fr !important;
+  gap: 20px !important;
+}
+
+.hero-left {
+  min-height: 430px !important;
+  padding: 30px !important;
+  border-radius: 28px !important;
+}
+
+.hero-right {
+  min-height: 430px !important;
+  padding: 16px !important;
+  border-radius: 28px !important;
+  gap: 12px !important;
+}
+
+.hero-photo {
+  min-height: 245px !important;
+  border-radius: 22px !important;
+}
+
+.hero-copy {
+  max-width: 560px !important;
+  gap: 14px !important;
+}
+
+.hero-copy h1,
+.hero-left h1 {
+  font-size: clamp(34px, 4.2vw, 54px) !important;
+  line-height: 1.02 !important;
+  max-width: 620px !important;
+}
+
+.hero-copy .lead {
+  font-size: 16px !important;
+  line-height: 1.42 !important;
+  max-width: 560px !important;
+}
+
+.hero-kicker {
+  padding: 8px 12px !important;
+  font-size: 11px !important;
+  margin-bottom: 10px !important;
+}
+
+.hero-proof {
+  gap: 4px !important;
+}
+
+.proof-badge {
+  padding: 7px 11px !important;
+  font-size: 11px !important;
+}
+
+.proof-text {
+  font-size: 13px !important;
+}
+
+.btn-row {
+  margin-top: 22px !important;
+  gap: 10px !important;
+}
+
+.hero .btn {
+  height: 48px !important;
+  padding: 0 18px !important;
+  font-size: 14px !important;
+}
+
+.hero-stats {
+  gap: 10px !important;
+}
+
+.stat {
+  min-height: 82px !important;
+  padding: 13px !important;
+  border-radius: 16px !important;
+  gap: 6px !important;
+}
+
+.stat strong {
+  font-size: 22px !important;
+}
+
+.stat span {
+  font-size: 12px !important;
+  line-height: 1.25 !important;
+}
+
+.hero-badge {
+  padding: 8px 12px !important;
+  font-size: 11px !important;
+}
+
+.hero-photo-overlay {
+  left: 14px !important;
+  right: 14px !important;
+  bottom: 14px !important;
+}
+
+/* Tablet */
+@media (max-width: 1180px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-left,
+  .hero-right {
+    min-height: auto !important;
+  }
+
+  .hero-photo {
+    min-height: 320px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 820px) {
+  .hero {
+    padding: 20px 0 44px !important;
+  }
+
+  .hero-left {
+    padding: 22px !important;
+    border-radius: 22px !important;
+  }
+
+  .hero-right {
+    padding: 14px !important;
+    border-radius: 22px !important;
+  }
+
+  .hero-copy h1,
+  .hero-left h1 {
+    font-size: clamp(32px, 9vw, 44px) !important;
+  }
+
+  .hero-photo {
+    min-height: 230px !important;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .stat {
+    min-height: 78px !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-photo {
+    min-height: 210px !important;
   }
 }
