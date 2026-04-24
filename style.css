@@ -1839,3 +1839,74 @@ h3 {
     font-size: 12px !important;
   }
 }
+/* ===== CLIENTS IMPROVEMENT ===== */
+
+/* ПК — чуть аккуратнее сетка */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.logo-tile {
+  border-radius: 16px;
+  min-height: 72px;
+  padding: 14px;
+  font-size: 14px;
+  transition: 0.25s ease;
+  opacity: 0.85;
+}
+
+.logo-tile:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.06);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 820px) {
+
+  .logos {
+    display: flex !important;
+    gap: 12px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .logo-tile {
+    flex: 0 0 auto;
+    min-width: 120px;
+    height: 60px;
+    border-radius: 14px;
+    font-size: 13px;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  /* скролл полоска */
+  .logos::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .logos::-webkit-scrollbar-thumb {
+    background: rgba(156,255,59,0.4);
+    border-radius: 999px;
+  }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 480px) {
+  .logo-tile {
+    min-width: 100px;
+    height: 54px;
+    font-size: 12px;
+  }
+}
