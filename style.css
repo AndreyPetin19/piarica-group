@@ -1725,3 +1725,117 @@ h3 {
     min-height: 210px !important;
   }
 }
+/* ===== MOBILE CASES CAROUSEL ===== */
+@media (max-width: 820px) {
+  .cases-grid {
+    display: flex !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 12px !important;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .cases-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .cases-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 999px;
+  }
+
+  .cases-grid::-webkit-scrollbar-thumb {
+    background: rgba(156, 255, 59, 0.45);
+    border-radius: 999px;
+  }
+
+  .case-card,
+  .case-card-large {
+    flex: 0 0 82% !important;
+    max-width: 82% !important;
+    grid-row: auto !important;
+    scroll-snap-align: start !important;
+    border-radius: 22px !important;
+  }
+
+  .case-media.real-media,
+  .case-card-large .case-media.real-media {
+    height: 190px !important;
+    min-height: 190px !important;
+    max-height: 190px !important;
+  }
+
+  .case-media.real-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .case-label {
+    top: 12px !important;
+    left: 12px !important;
+    padding: 6px 10px !important;
+    font-size: 10px !important;
+  }
+
+  .case-content {
+    padding: 16px !important;
+    gap: 8px !important;
+  }
+
+  .case-content h3 {
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+    max-width: none !important;
+  }
+
+  .case-content p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    max-width: none !important;
+  }
+
+  .case-tags {
+    margin-top: 6px !important;
+    gap: 6px !important;
+  }
+
+  .case-tags .pill {
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .case-card,
+  .case-card-large {
+    flex-basis: 88% !important;
+    max-width: 88% !important;
+  }
+
+  .case-media.real-media,
+  .case-card-large .case-media.real-media {
+    height: 165px !important;
+    min-height: 165px !important;
+    max-height: 165px !important;
+  }
+
+  .case-content {
+    padding: 14px !important;
+  }
+
+  .case-content h3 {
+    font-size: 16px !important;
+  }
+
+  .case-content p {
+    font-size: 12px !important;
+  }
+}
