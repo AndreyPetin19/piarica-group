@@ -1117,24 +1117,6 @@ h3 {
     position: relative;
   }
 
-  .services-carousel::after,
-  .portfolio-slider::after,
-  .equipment-slider::after {
-    content: "← листайте →";
-    position: sticky;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    align-self: flex-end;
-    display: inline-flex;
-    width: max-content;
-    color: rgba(156,255,59,.9);
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: .13em;
-    white-space: nowrap;
-    padding-top: 6px;
-  }
 
   .service-slide {
     flex: 0 0 88%;
@@ -1733,25 +1715,6 @@ h3 {
     padding-bottom: 42px !important;
   }
 
-  .services-carousel::after,
-  .portfolio-slider::after,
-  .equipment-slider::after {
-    content: "← листайте →" !important;
-    position: sticky !important;
-    left: 18px !important;
-    bottom: 0 !important;
-    transform: none !important;
-
-    display: inline-flex !important;
-    width: max-content !important;
-    margin-top: 12px !important;
-
-    color: rgba(156,255,59,.95) !important;
-    font-size: 12px !important;
-    font-weight: 900 !important;
-    letter-spacing: .13em !important;
-    white-space: nowrap !important;
-  }
 
   .service-slide-collage {
     min-height: auto !important;
@@ -1829,36 +1792,58 @@ h3 {
     display: none !important;
   }
 
-  /* ===== FIX MOBILE SWIPE HINT POSITION ===== */
+  .mobile-swipe-hint{
+  display:none;
+}
+
+@media (max-width:820px){
+
+  .mobile-swipe-hint{
+    display:flex;
+
+    align-items:center;
+    justify-content:flex-start;
+
+    margin-top:14px;
+
+    color:#9cff3b;
+
+    font-size:12px;
+    font-weight:800;
+
+    letter-spacing:.14em;
+  }
+}
+
+/* ===== FINAL MOBILE HINT FIX ===== */
 
 @media (max-width: 820px) {
   .services-carousel::before,
+  .services-carousel::after,
   .portfolio-slider::before,
-  .equipment-slider::before {
+  .portfolio-slider::after,
+  .equipment-slider::before,
+  .equipment-slider::after {
     content: none !important;
     display: none !important;
   }
 
-  .services-carousel::after,
-  .portfolio-slider::after,
-  .equipment-slider::after {
+  #services,
+  #portfolio,
+  #equipment {
+    position: relative !important;
+  }
+
+  #services::after,
+  #portfolio::after,
+  #equipment::after {
     content: "← листайте →" !important;
 
-    position: sticky !important;
+    position: absolute !important;
     left: 18px !important;
-    bottom: 0 !important;
-    transform: none !important;
+    bottom: 22px !important;
 
-    flex: 0 0 auto !important;
-    align-self: flex-end !important;
-
-    display: inline-flex !important;
-    width: max-content !important;
-    height: 18px !important;
-
-    margin-top: auto !important;
-    margin-left: 0 !important;
-    margin-right: 24px !important;
+    display: block !important;
 
     color: rgba(156,255,59,.95) !important;
     font-size: 12px !important;
@@ -1866,13 +1851,22 @@ h3 {
     letter-spacing: .13em !important;
     white-space: nowrap !important;
 
-    z-index: 3 !important;
+    z-index: 5 !important;
+    pointer-events: none !important;
   }
 
-  .services-carousel,
-  .portfolio-slider,
-  .equipment-slider {
-    align-items: stretch !important;
-    padding-bottom: 38px !important;
+  #services,
+  #portfolio,
+  #equipment {
+    padding-bottom: 78px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #services::after,
+  #portfolio::after,
+  #equipment::after {
+    left: 16px !important;
+    bottom: 24px !important;
   }
 }
