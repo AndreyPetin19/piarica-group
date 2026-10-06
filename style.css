@@ -1,11 +1,11 @@
 :root {
-  --bg: #0a0d0c;
+  --bg: #14213D;
   --card: rgba(255, 255, 255, 0.04);
-  --text: #f3f5f4;
-  --muted: #a8b0ac;
+  --text: #FFFFFF;
+  --muted: #AEB7CA;
   --line: rgba(255, 255, 255, 0.08);
-  --accent: #9cff3b;
-  --accent2: #d6ffb0;
+  --accent: #FF8200;
+  --accent2: #FFB45E;
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
   --container: 1240px;
   --header-height: 82px;
@@ -41,18 +41,18 @@ body {
   background:
     radial-gradient(
       circle at top left,
-      rgba(156, 255, 59, 0.12),
+      rgba(255, 130, 0, 0.12),
       transparent 28%
     ),
     radial-gradient(
       circle at 90% 10%,
-      rgba(156, 255, 59, 0.08),
+      rgba(255, 130, 0, 0.08),
       transparent 22%
     ),
     linear-gradient(
       180deg,
-      #0a0d0c,
-      #0b100e
+      #14213D,
+      #101B33
     );
 }
 
@@ -115,7 +115,7 @@ button {
   width: 34px;
   height: 1px;
 
-  background: rgba(156, 255, 59, 0.65);
+  background: rgba(255, 130, 0, 0.65);
 }
 
 h1,
@@ -185,11 +185,11 @@ h3 {
 }
 
 .btn-primary {
-  color: #081106;
+  color: #14213D;
   background: var(--accent);
 
   box-shadow:
-    0 16px 34px rgba(156, 255, 59, 0.2);
+    0 16px 34px rgba(255, 130, 0, 0.2);
 }
 
 .btn-secondary {
@@ -221,7 +221,7 @@ h3 {
 
   width: 100%;
 
-  background: rgba(8, 11, 10, 0.86);
+  background: rgba(20, 33, 61, 0.86);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
   backdrop-filter: blur(20px);
@@ -234,7 +234,7 @@ h3 {
 }
 
 .site-header.is-scrolled {
-  background: rgba(8, 11, 10, 0.97);
+  background: rgba(20, 33, 61, 0.97);
   border-color: rgba(255, 255, 255, 0.1);
 
   box-shadow:
@@ -369,7 +369,7 @@ h3 {
 .nav-link.active {
   color: var(--accent);
 
-  background: rgba(156, 255, 59, 0.08);
+  background: rgba(255, 130, 0, 0.08);
 }
 
 .nav-link.active::after {
@@ -466,7 +466,7 @@ h3 {
   background:
     radial-gradient(
       circle at 82% 18%,
-      rgba(156, 255, 59, 0.17),
+      rgba(255, 130, 0, 0.17),
       transparent 30%
     ),
     linear-gradient(
@@ -491,8 +491,8 @@ h3 {
 
   color: var(--accent2);
 
-  background: rgba(156, 255, 59, 0.08);
-  border: 1px solid rgba(156, 255, 59, 0.2);
+  background: rgba(255, 130, 0, 0.08);
+  border: 1px solid rgba(255, 130, 0, 0.2);
 
   font-size: 11px;
   font-weight: 800;
@@ -568,7 +568,7 @@ h3 {
   background:
     radial-gradient(
       circle at top right,
-      rgba(156, 255, 59, 0.17),
+      rgba(255, 130, 0, 0.17),
       transparent 34%
     ),
     linear-gradient(
@@ -618,7 +618,7 @@ h3 {
 
   padding: 12px;
 
-  background: #f0edef;
+  background: #F2F4F8;
 }
 
 .audit-badge-card div {
@@ -751,7 +751,7 @@ h3 {
   transform: translateY(-2px);
 
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(156, 255, 59, 0.3);
+  border-color: rgba(255, 130, 0, 0.3);
 }
 
 /* =========================
@@ -776,7 +776,7 @@ h3 {
   background:
     radial-gradient(
       circle at top right,
-      rgba(156, 255, 59, 0.12),
+      rgba(255, 130, 0, 0.12),
       transparent 32%
     ),
     linear-gradient(
@@ -830,12 +830,12 @@ h3 {
   font-weight: 800;
   line-height: 1.5;
 
-  border: 1px dashed rgba(156, 255, 59, 0.35);
+  border: 1px dashed rgba(255, 130, 0, 0.35);
 
   background:
     radial-gradient(
       circle at center,
-      rgba(156, 255, 59, 0.12),
+      rgba(255, 130, 0, 0.12),
       transparent 45%
     ),
     rgba(255, 255, 255, 0.03);
@@ -875,7 +875,7 @@ h3 {
     linear-gradient(
       180deg,
       transparent,
-      rgba(8, 11, 10, 0.8)
+      rgba(20, 33, 61, 0.8)
     );
 }
 
@@ -909,12 +909,12 @@ h3 {
   justify-content: center;
 
   border-style: dashed;
-  border-color: rgba(156, 255, 59, 0.35);
+  border-color: rgba(255, 130, 0, 0.35);
 
   background:
     radial-gradient(
       circle at center,
-      rgba(156, 255, 59, 0.12),
+      rgba(255, 130, 0, 0.12),
       transparent 40%
     ),
     rgba(255, 255, 255, 0.03);
@@ -998,7 +998,7 @@ h3 {
 
   border-radius: 999px;
 
-  background: rgba(156, 255, 59, 0.14);
+  background: rgba(255, 130, 0, 0.14);
 
   filter: blur(30px);
 }
@@ -1070,12 +1070,12 @@ h3 {
   align-items: center;
   gap: 10px;
 
-  color: #071005;
+  color: #101B33;
   background: var(--accent);
 
   box-shadow:
     0 18px 42px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(156, 255, 59, 0.22);
+    0 0 0 1px rgba(255, 130, 0, 0.22);
 
   font-weight: 900;
 }
@@ -1090,7 +1090,7 @@ h3 {
   place-items: center;
 
   color: var(--accent);
-  background: #071005;
+  background: #101B33;
 }
 
 /* =========================
@@ -1550,5 +1550,29 @@ h3 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Piarica Group brandbook 2026 */
+.brand-logo {
+  width: 150px;
+  height: 52px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  object-fit: contain;
+}
+.site-header.is-scrolled .brand-logo {
+  width: 132px;
+  height: 44px;
+}
+.brand-text { display: none; }
+
+@media (max-width: 700px) {
+  .brand-logo,
+  .site-header.is-scrolled .brand-logo {
+    width: 118px;
+    height: 42px;
   }
 }
